@@ -62,7 +62,7 @@ body{
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: 2px;
+    bottom: 20px;
     transition: 0.5s;
 }
 .navbar a:hover::after{
