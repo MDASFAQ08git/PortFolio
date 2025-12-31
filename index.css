@@ -9,7 +9,7 @@ body{
     color: #fff;
 }
 .header{
-    position: fixed;
+    position:absolute;
     margin-top: 5px;
     margin-left: 35px;
     width: 80%;
@@ -156,6 +156,8 @@ body{
     margin-left: 200px;
 }
 .about-text{
+    display: flex;
+    gap: 35%;
     font-size: 40px;
     font-weight: 600;
     color: #fff;
@@ -219,6 +221,8 @@ body{
     margin-bottom: 10px;
 }
 .skill-title{
+    display: flex;
+    gap: 50%;
     font-size: 50px;
 }
 .skill-list{
@@ -272,14 +276,16 @@ body{
     margin-left: 60px;
 }
 .project-title{
+    display: flex;
+    gap: 50%;
     font-size: 50px;
 }
 .project-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 100px;
-    width: 95%;
-    margin-top: 50px;
+    width: 90%;
+    margin-top: 60px;
 }
 .project{
     border-radius: 10px;
