@@ -425,3 +425,288 @@ form input, form textarea{
     background-color: gray;
     height: 20px;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ================= MOBILE VIEW (max-width: 600px) ================= */
+@media (max-width: 600px) {
+
+    .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    background: #080808;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 15px 0;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.navbar a {
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* -------- Header & Navbar -------- */
+    .header {
+        position: static;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .header nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    /* -------- Home Section -------- */
+    .Home {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 10px;
+        background-position: top;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .para1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-text a {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .Home-Social {
+        text-align: center;
+    }
+
+    .Home-Social a {
+        margin: 8px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    /* -------- About Section -------- */
+    .About-Content {
+        padding: 60px 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .about-text {
+        font-size: 30px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-detail {
+        gap: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tab-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* -------- Skills Section -------- */
+    .skill-content {
+        margin-left: 0;
+        padding: 60px 15px;
+    }
+
+    .skill-title {
+        font-size: 32px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        width: 100%;
+    }
+
+    /* -------- Projects Section -------- */
+    .projects-text {
+        margin-left: 0;
+        padding: 60px 15px;
+    }
+
+    .project-title {
+        font-size: 32px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        width: 100%;
+    }
+
+    .project img {
+        height: 250px;
+    }
+
+    /* -------- Contact Section -------- */
+    .Contact-Text {
+        margin-left: 0;
+        padding: 60px 15px;
+    }
+
+    .Contact-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .contact-left {
+        text-align: center;
+    }
+
+    .Contact-icons {
+        text-align: center;
+    }
+
+    .Contact-icons a {
+        margin: 8px;
+    }
+
+    /* -------- Footer -------- */
+    .footer {
+        font-size: 14px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= TABLET VIEW ================= */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .header {
+        padding: 15px;
+        background-image: url(./Images/Asfaq\ Photo2.jpg);
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .Home {
+        padding: 80px 30px;
+        height: auto;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .skill-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(1, 1fr);
+
+        grid-gap: 40px;
+    }
+
+    .about-text,
+    .skill-title,
+    .project-title {
+        font-size: 40px;
+    }
+}
+

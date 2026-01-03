@@ -8,20 +8,26 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/7a08eb2530.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/animate.css" rel="styleSheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="./index.html" class="logo animate___animated animate_bounce animate_infinite">Asfaq's portfolio</a>
-            <nav class="navbar">
-                    <a href="#section_1">Home</a>
-                    <a href="#section_2">About</a>
-                    <a href="#section_3">Skills</a>
-                    <a href="#section_4">Projects</a>
-                    <a href="#section_5">Contact</a>
-            </nav>
-        </div>
+<div class="menu-toggle" id="menu-toggle">
+    <i class="bx bx-menu"></i>
+</div>
+
+<nav class="navbar" id="navbar">
+    <a href="#section_1">Home</a>
+    <a href="#section_2">About</a>
+    <a href="#section_3">Skills</a>
+    <a href="#section_4">Projects</a>
+    <a href="#section_5">Contact</a>
+</nav>
+            </div>
     </header>
     
     <!-- --------------------Home--------------------- -->
@@ -55,7 +61,7 @@
         <div class="container2">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./Images/abt_mobile3.png" alt="about">
+                    <img src="./Images/abt_mobile3.png" loading="lazy" alt="about">
                 </div>
                 <div class="about-col-2">
                     <h1 class="about-text">About me<a href="#section_1" class="btn-box">Home</a></h1>
@@ -146,7 +152,7 @@
         <h1 class="project-title">My Project<a href="#section_1" class="btn-box">Home</a></h1>
         <div class="project-list">
             <div class="project">
-                <img src="./Images/project-portfolio-image.jpg"/>
+                <img src="./Images/project-portfolio-image.jpg" loading="lazy"/>
                 <div class="layer">
                     <h3>Personal Portfolio</h3>
                     <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript.
@@ -157,7 +163,7 @@
                 </div>
             </div>
             <div class="project">
-                <img src="./Images/e-commerce-application-service.webp"/>
+                <img src="./Images/e-commerce-application-service.webp" loading="lazy"/>
                 <div class="layer">
                     <h3>E-Commerce Application (React JS)</h3>
                     <p>Built a dynamic e-commerce web application using React JS for the frontend.
@@ -168,7 +174,7 @@
                 </div>
             </div>
             <div class="project">
-                <img src="./Images/projects-E-commerce.jpeg"/>
+                <img src="./Images/projects-E-commerce.jpeg" loading="lazy"/>
                 <div class="layer">
                     <h3>Final Year Project – E-Commerce Application</h3>
                     <p>Developed a full-featured e-commerce application for online book sales.
@@ -221,7 +227,7 @@
 </footer>
 
 
-<script src="./index.js"></script>
+<script src="./index.js" defer></script>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body> 
 </html>
