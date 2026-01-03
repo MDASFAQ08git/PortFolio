@@ -115,6 +115,9 @@ body{
 .header-text a{
     margin-left: 60px;
 }
+.para1{
+    width: 55%;
+}
 .btn-box{
     margin-top: 5px;
     display: inline-flex;
